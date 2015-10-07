@@ -7,13 +7,24 @@ body {
 }
 main{
 	background-color: #ffffff;
-	margin: 2em 2em 2em 2em ;
+	margin-top: 2em;
+	margin-bottom: 2em;
 }
 nav span{
 	color: #DB9D4A;
 }
+nav a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #DB9D4A;
+}
 .navbar-header{
 	display: inline-block;
+}
+header h1:hover{
+	color: #DB9D4A;
+	text-decoration: none;
 }
 hr{
 	color: black;
@@ -39,8 +50,12 @@ h3{
 	color: #ffffff;
 }
 h4{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #ffffff;
 	text-align: center;
-	position: inherit;
+	position: absolute;
 	
 }
 h5{
@@ -56,7 +71,7 @@ h6{
 	padding-top: 10em;
 }
 .banner img{
-	margin-top: -100em;
+	top: -100em;
 	position: relative;
 }
 article span{
@@ -65,4 +80,70 @@ article span{
 }
 article p{
 	padding-top: 1em;
+}
+article a{
+	color: #DB9D4A;
+	font-family: 'Rockwell', serif; 
+}
+
+.recipe-pics a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #DB9D4A;
+}
+.recipe-pics li{
+	padding-bottom: 1em;
+}
+.recipe-pics li:last-child{
+	padding-bottom: 4em;
+}
+.recipes{
+	background-color: #DB9D4A;
+	padding: .5em 1em .5em 1em;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.recipes a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #ffffff;
+}
+.most-popular{
+	background-color: #DB9D4A;
+	padding: .5em 1em .5em 1em;
+	text-align: center;
+	margin-bottom: 2em;
+}
+.most-popular a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #ffffff;
+}
+.most-popular-pics a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #DB9D4A;
+}
+aside .how-to{
+	background-color: #D89D4A;
+}
+.how-tos-pics a{
+	font-family: 'Rockwell', serif; 
+	font-size: 1.125em;
+	line-height: 1em;
+	color: #DB9D4A;
+}
+.how-tos-pics li:last-child{
+	padding-bottom: 4em;
+}
+.results img{
+	padding-bottom: 1.5em;
+
+}
+.ingredients li{
+	padding-left: 1.6em;
 }
