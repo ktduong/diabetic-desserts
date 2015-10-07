@@ -21,37 +21,42 @@
 
 <body>
 	<main class="col-xs-10 col-xs-offset-1">
-		<header class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4">
-			<a href="index.html"><h1>Diabetic Desserts</h1>
-			<img class="col-xs-9 col-xs-offset-1" src="images/deco-line.png" alt="decorated line">
+		<div class="row">
+		<header class=" row col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-md-4">
+			<a href="index.html"><h1 class="">Diabetic Desserts</h1>
+			<img class="" src="images/deco-line.png" alt="decorated line">
 			</a>
 		</header>
 		<nav>
 			<div class="navbar-header"> 
-    				<button class="pull-left navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+    				<button class="col-xs-12 pull-left navbar-toggle collapsed" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
    						<span class="sr-only">Toggle navigation</span>
    						<span class="glyphicon glyphicon-menu-hamburger pull-left"></span>
-    					<span class="col-xs-12 pull-right">MENU & SEARCH</span>	
+    					<span class="pull-right">MENU & SEARCH</span>	
     						
     				</button>
     		</div>
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
  
  				<ul class="nav nav-justified">
-					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
 					<li><a href="recipes.html">Recipes</a></li>
 					<li><a href="recipes.html">How-To's & Tips</a></li>
 				</ul>
-				<form action="results.html">
+				<form class="col-sm-6 col-sm-offset-4" action="results.html">
                                 <input type="text" placeholder="Search Diabetic Desserts..." required>
                                 <input type="button" value="Search">
 				</form>
 				</div>
 		</nav>
-<aside>
-	<h3>Simple. <br>Delicious. <br>Healthy. <br> Easy.</h3> 
-	<h4>Deserts anyone can enjoy.</h4>
+		
+<aside class="col-xs-12">
+	<div class="row">
 	<img class="banner img-responsive pull-left" src="images/banner-cell.png" alt="banner">
+	<div class="banner-text"><h3 class="col-sm-12">Simple. <br>Delicious. <br>Healthy. <br> Easy.</h3> 
+	<h4>Desserts anyone can enjoy.</h4>
+</div>
+</div>
 </aside>
 <article class="col-xs-12 col-sm-10 col-sm-offset-1">
 	<a href="details.html"><h5>RASPBERRY ICE CREAM</h5></a>
@@ -76,12 +81,12 @@
 	<span class="glyphicon glyphicon-star"></span>
 	<span class="glyphicon glyphicon-star"></span>
 	<a href="#">(37)</a>
-	<img class="img-responsive" src="images/raspberry-ice-cream.jpg" alt="Berry Cake roll">
+	<img class="img-responsive" src="images/berry-roll.jpg" alt="Berry Cake roll">
 	<p>Whoo! I scream for ice cream! There's even more to love in this fruity ice cream, thanks to the tweaks our pros made. With the original’s creaminess and 30 percent fewer calories, this makeover is a stone-cold success!</p>
 	<a href="details.html">READ MORE—</a>
 	<div class="pages">
 		<ul class="pagination">
-			<li><a href="index.html"><</a></li>
+			<li><a href="index.html">&lt;</a></li>
 			<li><a href="index.html">1</a></li>
 			<li><a href="index.html">2</a></li>
 			<li><a href="index.html">3</a></li>
@@ -92,10 +97,10 @@
 	</div>
 
 	
-	<div class="most-popular">
+	<div class="most-popular pull-left">
 		<a href="recipes.html">Most Popular</a>
 	</div>
-	<div class="most-popular-pics">
+	<div class="most-popular-pics row">
 		<ul class="list-unstyled">
 			<li class="col-xs-6"><img class="img-responsive" src="images/berry-roll.jpg" alt="berry cake roll"><a href="details.html">Berry Cake-Roll</a>
 			</li>
@@ -108,22 +113,23 @@
 		</ul>	
 	</div>
 
-	<div class="how-to">
+	<div class="how-to pull-right">
 		<a href="recipes.html">Helpful How-To's</a>
 	</div>
 	<div class="how-tos-pics">
-		<ul class="list-unstyled">
+		<ul class="list-unstyled row">
 			<li class="col-xs-6"><img class="img-responsive" src="images/sugar.jpg" alt="sugar"><a href="details.html">Types of Sugars</a>
 			</li>
 			<li class="col-xs-6"><img class="img-responsive" src="images/flour.jpg" alt="ingredients"><a href="details.html">Best Ingredients</a>
 			</li>
-			<li class="col-xs-6"><img class="img-responsive" src="images/deco-cake.jpg" alt="decoration"><a href="details.html">Best Decorating tips</a>
+			<li class="col-xs-6"><img class="img-responsive" src="images/deco-cake.jpg" alt="decoration"><a href="details.html">Best Decoration</a>
 			</li>
-			<li class="col-xs-6"><img class="img-responsive" src="images/peach-fast.jpg" alt="portion plate"><a href="details.html">Portioning Dessers</a>
+			<li class="col-xs-6"><img class="img-responsive" src="images/peach-fast.jpg" alt="portion plate"><a href="details.html">Portioning</a>
 			</li>
 		</ul>	
 	</div>
 </article>
+</div>
 </main>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
