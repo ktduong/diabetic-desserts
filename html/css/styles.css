@@ -33,8 +33,32 @@ nav a{
 .navbar-header{
 	display: inline-block;
 }
-form{
-	padding-bottom: 1em;
+.menu{
+	font-family: 'PT Sans Narrow';
+	font-weight: 700;
+	font-size: 1.3em;
+	margin-top: -.3em;
+}
+
+input[type="text"] {
+    display: inline-block;
+    height: 20px;
+    padding: 16px 25px;
+    line-height: 1em;
+    font-size: 0.9em;
+    color: #555555;
+    vertical-align: middle;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+#appendedInputButtons{
+	background-color: #DCF7DD;
+	border: none;
+}
+.btn{
+	border: none;
+	background-color: #DCF7DD;
 }
 header h1:hover{
 	color: #DB9D4A;
@@ -56,6 +80,9 @@ h2{
 	color: #DB9D4A;
 	float: left;
 }
+/* BANNER HEADERS 
+=================================================================================*/
+
 h3{
 	font-family: 'Lobster', serif;
 	font-size: 1.5em;
@@ -69,9 +96,10 @@ h4{
 	line-height: 1em;
 	color: #ffffff;
 	text-align: center;
-	
-	
 }
+
+/* BANNER HEADERS END
+=================================================================================*/
 h5{
 	font-family: 'Rockwell', serif; 
 	font-size: 2.2em;
@@ -88,12 +116,16 @@ h6{
 }
 .banner img{
 	width: 100%;
-	position: relative;
+	position: absolute;
 
 }
 .banner-text{
-	position: absolute;
+	margin-top: -0.5em;
+	position: relative;
 	width: 100%;
+}
+.banner-text h4{
+	padding-bottom: 3em;
 }
 /* HEADER STOOFZ ENDS
 ===================================================================*/
