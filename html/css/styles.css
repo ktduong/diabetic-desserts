@@ -15,13 +15,13 @@ main{
 ====================================================== */
 nav{
 	padding-top: 2em;
+	width: 100%;
 }
 nav span{
 	color: #DB9D4A;
-	padding-left: 3em;
 }
 nav span:last-child{
-	padding-left: 0;
+
 }
 nav a{
 	font-family: 'Rockwell', 'Rokkitt', serif; 
@@ -29,8 +29,14 @@ nav a{
 	line-height: 1em;
 	color: #DB9D4A;
 }
-.nav .active li{
-	background-color: red;
+nav ul{
+	text-align: center;
+}
+.nav .active a{
+	color: #F27C7C;
+}
+.navbar-nav {
+	margin-left: 0;
 }
 nav .navbar-nav{
 	width: 100%;
@@ -38,24 +44,37 @@ nav .navbar-nav{
 .navbar-header{
 	display: inline-block;
 }
+.navbar-brand, .navbar-nav>li>a:hover{
+	background-color: #DCF7DD;
+	color: #ffffff;
+}
+.navbar-toggle {
+	margin-right: 0;
+	padding: 0;
+}
+button{
+	margin-right: 0;
+}
 hr{
 	background-color: #DB9D4A;
 	width: 80%;
 	height: 2px;
 }
-.menu{
+span b{
 	font-family: 'PT Sans Narrow';
 	font-weight: 700;
 	font-size: 1.3em;
 	margin-top: -.3em;
+	padding-left: 0.5em;
 }
 form{
 	margin-bottom: 1em;
+	display: inline-block;
 }
 input[type="text"] {
     display: inline-block;
     height: 20px;  
-    width: 75%; 
+    width: 77%; 
     padding: 16px 5px ;
     line-height: 1em;
     font-size: 0.9em;
@@ -72,6 +91,11 @@ input[type="text"] {
 .btn{
 	border: none;
 	background-color: #DCF7DD;
+	width: 20%;
+	float: right;
+}
+h1{
+	text-align: center;
 }
 header h1:hover{
 	color: #DB9D4A;
@@ -132,17 +156,14 @@ h6{
 .banner img{
 	width: 100%;
 	position: absolute;
-	margin-bottom: 4em;
+	margin-bottom: 0em;
 
 }
 .banner-text{
 	margin-top: -0.5em;
 	position: relative;
 	width: 100%;
-	margin-bottom: 1em;
-}
-.banner-text h4{
-	padding-bottom: 3em;
+	margin-bottom: 0em;
 }
 aside{
 	margin-bottom: 2em;
@@ -156,7 +177,6 @@ article span{
 	padding-bottom: 1em;
 }
 article p{
-	padding-top: 1em;
 	color: #765A56;
 	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-weight: lighter;
@@ -248,17 +268,23 @@ article a{
 .pages{
 	padding-bottom: 3em;
 	max-width: 100%;
+	padding-left: 1em;
 }
 .pagination{
-	max-width: 100%;
+	width: 100%;
 }
 .pagination>li>a {
 	color: #DB9D4A;
-
+	padding-left: 1em;
+	padding-right: 1em;
 }
 .results img{
 	padding-bottom: 1.5em;
 
+}
+.results b{
+	padding-left: 1.1em;
+	padding-top: 1em;
 }
 ol {
 	padding-left: 1.3em;
@@ -266,7 +292,10 @@ ol {
 ol > li:before{
 	color: #F27C7C;
 }
-
+ol img{
+	padding-bottom: 1em;
+	padding-top: 1em;
+}
 .ingredients span {
 	color: #F27C7C;
 }
@@ -276,6 +305,31 @@ aside{
 }
 /* MEDIA QUERIES
 ================================================*/
+@media (min-width: 360px){
+	header{
+		margin-left: 1em;
+	}
+}
+@media (min-width: 500px){
+	header{
+		margin-left: 5em;
+	}
+	nav span {
+		padding-left: 3em;
+	}
+}
+@media (min-width: 680px){
+	header{
+		margin-left: 10em;
+	}
+	nav {
+		padding-left: 2em;
+	}
+	nav span {
+		padding-left: 4.5em;
+	}
+}
+
 @media (min-width: 359px){
 	.directions{
 	padding-top: 6.9em;
@@ -303,9 +357,9 @@ aside{
 		width:80%;
 	}
 }
-@media (min-width: 435px){
+@media (min-width: 400px){
 	aside{
-	margin-bottom: 5em;
+	margin-bottom: 2em;
 }
 	h3{
 		padding-top: 2em;
@@ -313,26 +367,27 @@ aside{
 }
 @media (min-width: 640px){
 	aside{
-	margin-bottom: 10em;
+	margin-bottom: 5em;
 }
-	
+	 body h3{
+ 	font-size: 250%;
+ 	padding-top: 2em;
+ }
 }
 
 
 @media (min-width: 768px){
- body h3{
- 	font-size: 250%;
- 	padding-top: 2em;
- }
  .food-list {
-	height: 350px;
+	height: 260px;
 	padding-top: 3em;
+	font-size: 90%;
 }
  body{
  	font-size: 150%;
  }
 .banner img{
-	height: 110%;
+	height: 150%;
+	padding-bottom: 6em;
 }
  aside{
 	margin-bottom: 1em;
@@ -340,6 +395,17 @@ aside{
  nav form{
  	margin-top: -3em;
  }
+ ol li{
+	padding-bottom: 1em;
+	padding-top: 1em;
+	border-bottom: dotted #F27C7C;
+}
+ol li:last-child{
+	border: none;
+}
+.directions-info {
+	width: 50%;
+}
 }
 @media (min-width: 800px){
 	aside{
@@ -348,4 +414,17 @@ aside{
 	nav li{
 	padding-right: 3em;
 }
+}
+@media (min-width: 992px){
+	.directions-info {
+		width: 100%;
+	}
+}
+@media (min-width: 1280px){
+	nav{
+		font-size: 125%;
+	}
+	form{
+		padding-top: 0.7em;
+	}
 }
