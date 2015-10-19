@@ -13,7 +13,9 @@ main{
 
 /* Navigation
 ====================================================== */
-
+nav{
+	padding-top: 2em;
+}
 nav span{
 	color: #DB9D4A;
 	padding-left: 3em;
@@ -22,7 +24,7 @@ nav span:last-child{
 	padding-left: 0;
 }
 nav a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #DB9D4A;
@@ -30,8 +32,16 @@ nav a{
 .nav .active li{
 	background-color: red;
 }
+nav .navbar-nav{
+	width: 100%;
+}
 .navbar-header{
 	display: inline-block;
+}
+hr{
+	background-color: #DB9D4A;
+	width: 80%;
+	height: 2px;
 }
 .menu{
 	font-family: 'PT Sans Narrow';
@@ -39,11 +49,14 @@ nav a{
 	font-size: 1.3em;
 	margin-top: -.3em;
 }
-
+form{
+	margin-bottom: 1em;
+}
 input[type="text"] {
     display: inline-block;
-    height: 20px;
-    padding: 16px 25px;
+    height: 20px;  
+    width: 75%; 
+    padding: 16px 5px ;
     line-height: 1em;
     font-size: 0.9em;
     color: #555555;
@@ -63,6 +76,7 @@ input[type="text"] {
 header h1:hover{
 	color: #DB9D4A;
 	text-decoration: none;
+	text-align: center;
 }
 
 /* Navigation End
@@ -91,17 +105,18 @@ h3{
 	color: #ffffff;
 }
 h4{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #ffffff;
 	text-align: center;
 }
 
+
 /* BANNER HEADERS END
 =================================================================================*/
 h5{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 2.2em;
 	line-height: 1.2em;
 	color: #DB9D4A;
@@ -117,33 +132,42 @@ h6{
 .banner img{
 	width: 100%;
 	position: absolute;
+	margin-bottom: 4em;
 
 }
 .banner-text{
 	margin-top: -0.5em;
 	position: relative;
 	width: 100%;
+	margin-bottom: 1em;
 }
 .banner-text h4{
 	padding-bottom: 3em;
 }
+aside{
+	margin-bottom: 2em;
+}
 /* HEADER STOOFZ ENDS
 ===================================================================*/
-
+article{
+}
 article span{
 	color: #DB9D4A;
 	padding-bottom: 1em;
 }
 article p{
 	padding-top: 1em;
+	color: #765A56;
+	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-weight: lighter;
 }
 article a{
 	color: #DB9D4A;
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 }
 
 .recipe-pics a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #DB9D4A;
@@ -159,9 +183,10 @@ article a{
 	padding: .5em 1em .5em 1em;
 	text-align: center;
 	margin-bottom: 2em;
+	position: static;
 }
 .recipes a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #ffffff;
@@ -179,16 +204,19 @@ article a{
 }
 .most-popular a{
 	margin-top: 3em;
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.3em;
 	line-height: 1em;
 	color: #ffffff;
 }
 .most-popular-pics a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: .9em;
 	line-height: 1em;
 	color: #DB9D4A;
+}
+.most-popular-pics li{
+	padding-bottom: 1em;
 }
 .how-to{
 	margin-top: 3em;
@@ -200,27 +228,124 @@ article a{
 	width: 100%;
 }
 .how-to a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1.3em;
 	line-height: 1em;
 	color: #ffffff;
 }
 .how-tos-pics a{
-	font-family: 'Rockwell', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif; 
 	font-size: 1em;
 	line-height: .9em;
 	color: #DB9D4A;
+}
+.how-tos-pics li {
+	padding-bottom: 1em;
 }
 .how-tos-pics li:last-child{
 	padding-bottom: 4em;
 }
 .pages{
 	padding-bottom: 3em;
+	max-width: 100%;
+}
+.pagination{
+	max-width: 100%;
+}
+.pagination>li>a {
+	color: #DB9D4A;
+
 }
 .results img{
 	padding-bottom: 1.5em;
 
 }
-.ingredients li{
-	padding-left: 1.6em;
+ol {
+	padding-left: 1.3em;
+}
+ol > li:before{
+	color: #F27C7C;
+}
+
+.ingredients span {
+	color: #F27C7C;
+}
+aside{
+	color: #765A56;
+	font-family: 'Rockwell', 'Rokkitt', serif; 
+}
+/* MEDIA QUERIES
+================================================*/
+@media (min-width: 359px){
+	.directions{
+	padding-top: 6.9em;
+}
+.directions-info {
+	border-top: double #F27C7C;
+	border-bottom: double #F27C7C;
+	padding-top: 1em;
+	padding-bottom: 0.4em;
+	margin-bottom: 1em;
+	color: #765A56;
+}
+.time {
+	float: left;
+	padding-left: 1em;
+	padding-right: 1em;
+	border-right: solid #F27C7C;
+}
+.serving {
+	padding-left: 10.5em;
+}
+}
+@media (max-width: 768px){
+	nav ul {
+		width:80%;
+	}
+}
+@media (min-width: 435px){
+	aside{
+	margin-bottom: 5em;
+}
+	h3{
+		padding-top: 2em;
+	}
+}
+@media (min-width: 640px){
+	aside{
+	margin-bottom: 10em;
+}
+	
+}
+
+
+@media (min-width: 768px){
+ body h3{
+ 	font-size: 250%;
+ 	padding-top: 2em;
+ }
+ .food-list {
+	height: 350px;
+	padding-top: 3em;
+}
+ body{
+ 	font-size: 150%;
+ }
+.banner img{
+	height: 110%;
+}
+ aside{
+	margin-bottom: 1em;
+}
+ nav form{
+ 	margin-top: -3em;
+ }
+}
+@media (min-width: 800px){
+	aside{
+	margin-bottom: 5em;
+}
+	nav li{
+	padding-right: 3em;
+}
 }
