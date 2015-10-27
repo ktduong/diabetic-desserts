@@ -5,6 +5,10 @@ body {
    	font-size: 16px;
    	background-color: #DCF7DD;
 }
+img{
+  max-width: 100%;
+  height: auto;
+}
 main{
 	background-color: #ffffff;
 	margin-top: 2em;
@@ -24,7 +28,7 @@ nav span:last-child{
 
 }
 nav a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #DB9D4A;
@@ -74,8 +78,8 @@ form{
 }
 input[type="text"] {
     display: inline-block;
-    height: 20px;  
-    width: 77%; 
+    height: 20px;
+    width: 77%;
     padding: 16px 5px ;
     line-height: 1em;
     font-size: 0.9em;
@@ -121,7 +125,7 @@ h2{
 	color: #DB9D4A;
 	float: left;
 }
-/* BANNER HEADERS 
+/* BANNER HEADERS
 =================================================================================*/
 h3{
 	font-family: 'Lobster', serif;
@@ -131,7 +135,7 @@ h3{
 	color: #ffffff;
 }
 h4{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #ffffff;
@@ -142,7 +146,7 @@ h4{
 /* BANNER HEADERS END
 =================================================================================*/
 h5{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 2.2em;
 	line-height: 1.2em;
 	color: #DB9D4A;
@@ -173,20 +177,18 @@ aside{
 }
 /* HEADER STOOFZ ENDS
 ===================================================================*/
-article{
-}
 article span{
 	color: #DB9D4A;
 	padding-bottom: 1em;
 }
 article p{
 	color: #765A56;
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-weight: lighter;
 }
 article a{
 	color: #DB9D4A;
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 }
 ul li a:hover{
 	text-decoration: none;
@@ -200,7 +202,7 @@ ul img{
 }
 
 .recipe-pics a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #DB9D4A;
@@ -220,7 +222,7 @@ ul img{
 	position: static;
 }
 .recipes a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.125em;
 	line-height: 1em;
 	color: #ffffff;
@@ -238,13 +240,13 @@ ul img{
 }
 .most-popular a{
 	margin-top: 3em;
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.3em;
 	line-height: 1em;
 	color: #ffffff;
 }
 .most-popular-pics a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: .9em;
 	line-height: 1em;
 	color: #DB9D4A;
@@ -262,13 +264,13 @@ ul img{
 	width: 100%;
 }
 .how-to a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1.3em;
 	line-height: 1em;
 	color: #ffffff;
 }
 .how-tos-pics a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	font-size: 1em;
 	line-height: .9em;
 	color: #DB9D4A;
@@ -304,6 +306,9 @@ ul img{
 	padding-left: 1.1em;
 	padding-top: 1em;
 }
+.searchResult{
+  margin-left: 0;
+}
 ol {
 	padding-left: 1.3em;
 }
@@ -319,13 +324,13 @@ ol img{
 }
 aside{
 	color: #765A56;
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 }
 footer{
 	margin-bottom: 2em;
 }
 footer a{
-	font-family: 'Rockwell', 'Rokkitt', serif; 
+	font-family: 'Rockwell', 'Rokkitt', serif;
 	color: #DB9D4A;
 	text-align: center;
 	border: 2px solid #DB9D4A;
@@ -338,6 +343,9 @@ footer a:hover{
 }
 /* MEDIA QUERIES
 ================================================*/
+@media (max-width: 320px){
+  
+}
 @media (min-width: 360px){
 	header{
 		margin-left: 1em;
@@ -482,12 +490,9 @@ article img{
 	.directions-info {
 		width: 100%;
 	}
-	.banner img{
-		
-	}
-	banner-text h4{
-		margin-bottom: 10em;
-	}
+  banner-text{
+    padding-bottom: 5em;
+  }
 }
 @media (min-width: 1280px){
 	nav{
