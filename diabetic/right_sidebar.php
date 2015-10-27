@@ -3,15 +3,16 @@
 </head>
 
 <body>
+	<div class="<?= $c->getPageWrapperClass() ?>">
 	<main class="col-xs-10 col-xs-offset-1">
-		<div class="<?= $c->getPageWrapperClass() ?>">
+
 			<header class="col-xs-4 col-sm-4 col-sm-offset-4 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 				<?php
 					$ga = new GlobalArea('Header');
 					$ga->display();
 				?>
 				<img class="hidden-lg col-md-offset-1" src="<?php echo $this->getThemePath(); ?>/images/deco-line.png" alt="decorated line">
-				</a>
+
 			</header>
 		<nav class="row">
 			<div class="navbar-header col-xs-offset-2 col-md-8 col-md-offset-2 pull-left">
@@ -71,7 +72,7 @@
 			?>
 		</div>
 	</aside>
-</div>
+
 </main>
 
 <?php $this->inc('elements/footer.php'); ?>
