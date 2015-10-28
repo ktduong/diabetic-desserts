@@ -3,15 +3,16 @@
 </head>
 
 <body>
+	<div class="<?php echo $c->getPageWrapperClass()?>">
 	<main class="col-xs-10 col-xs-offset-1">
-		<div class="<?php echo $c->getPageWrapperClass()?>">
+
 		<header class="col-xs-4 col-xs-offset-1 col-sm-4 col-sm-offset-4 col-sm-offseet-2 col-md-4 col-md-offset-4 col-lg-4 col-lg-offset-4">
 			<?php
 				$ga = new GlobalArea('Header');
 				$ga->display();
 			?>
 			<img class="hidden-lg col-md-offset-1" src="<?php echo $this->getThemePath(); ?>/images/deco-line.png" alt="decorated line">
-			</a>
+
 		</header>
 		<nav class="row">
 			<div class="navbar-header col-xs-offset-2 col-md-8 col-md-offset-2 pull-left">
@@ -123,19 +124,19 @@
 			$a->display($c);
 			?>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html">
+			<li class="col-xs-6 col-lg-3">
 				<?php
 				$a = new Area('Pop2');
 				$a->display($c);
 				?>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html">
+			<li class="col-xs-6 col-lg-3">
 				<?php
 				$a = new Area('Pop3');
 				$a->display($c);
 				?>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html">
+			<li class="col-xs-6 col-lg-3">
 				<?php
 				$a = new Area('Pop4');
 				$a->display($c);
@@ -155,20 +156,25 @@
 				$a->display($c);
 				?>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html">
+			<li class="col-xs-6 col-lg-3">
 				<?php
 				$a = new Area('How2');
 				$a->display($c);
 				?>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html"><img class="img-responsive" src="<?php echo $this->getThemePath(); ?>/images/deco-cake.jpg" alt="decoration"></a><a href="details.html">Best Decoration</a>
+			<li class="col-xs-6 col-lg-3">
+				<img class="img-responsive" src="<?php echo $this->getThemePath(); ?>/images/deco-cake.jpg" alt="decoration">
+				<a href="details.html">Best Decoration</a>
 			</li>
-			<li class="col-xs-6 col-lg-3"><a href="details.html"><img class="img-responsive" src="<?php echo $this->getThemePath(); ?>/images/peach-fast.jpg" alt="portion plate"></a><a href="details.html">Portioning</a>
+			<li class="col-xs-6 col-lg-3">
+				<img class="img-responsive" src="<?php echo $this->getThemePath(); ?>/images/peach-fast.jpg" alt="portion plate">
+				<a href="details.html">Portioning</a>
 			</li>
 		</ul>
 	</div>
 </article>
 </div>
+
 </main>
 
 <?php $this->inc('elements/footer.php'); ?>
